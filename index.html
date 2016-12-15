@@ -32,17 +32,15 @@
 				<!-- Main -->
 					<div id="main">
 						<article class="thumb">
-							<div id="card"> 
-                                <div class="front"> 
-                                    <img src="images/fulls/01.jpg" style="backface-visibility: hidden;">
-                                </div> 
-                                <div class="back">
-                                    <img src="images/fulls/02.jpg">
-                                </div> 
-                            </div>
-                            <a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
-							<h2>Magna feugiat lorem</h2>
+							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
+							<video id="mySound" width="320" height="176">
+                                <source src="sounds/the-lone-ranger-william-tell-overture.mp3" type="audio/mp3">
+                                Your browser does not support audio.
+                            </video>
+                            <button onclick="playVid()" type="button">Play Sound</button>
+                            <h2>Sound 1</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+                            
 						</article>
 						<article class="thumb">
 							<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
@@ -154,9 +152,15 @@
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-            <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+            <script> 
+                var vid = document.getElementById("mySound"); 
+
+                function playVid() { 
+                    vid.play(); 
+                } 
+            </script>   
 
 	</body>
 </html>
